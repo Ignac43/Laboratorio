@@ -1,0 +1,36 @@
+#include <iostream>
+#include "Math.h"
+using namespace std;
+
+int main()
+{
+    //Declaracion Variables//
+    float a, b, c, x1, x2, d;
+    cout << "Calculo de las raices de una cuadratica" << endl;
+    cout << "Coeficientes a= ";
+    cin >> a;
+    if (a != 0) {
+        cout << "b= ";
+        cin >> b;
+        cout << "c= ";
+        cin >> c;
+        d = -b * b - 4 * a * c;
+        if (d > 0) {
+            x1 =(-b + sqrt(-d)) / (2 * a); //se pone doble - para comparar que d=0
+            x2 =(-b - sqrt(d)) / (2 * a);
+            cout << "Raices reales: x1= " << x1 << "x2= " << x2 << endl;
+        }
+        else
+            if (d == 0)
+                cout << "Raiz uncia: " << -b / (2 * a);
+            else
+                cout << "Raiz imaginaria: x1= " << -b / (2 * a) << "+" << sqrt(-d);
+    }
+    else
+    {
+        cout << "Error";
+        return 0;
+
+    }
+
+}
