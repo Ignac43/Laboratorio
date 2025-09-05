@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int opcion, cantidad ;
+    float precio, suma=0;
+    
+    cout<<"**********menu*********"<<endl;
+    cout<<"1. Hamburguesa simple: 3 Bs"<<endl;
+    cout<<"2. Hamburguesa con queso: 5 Bs"<<endl;
+    cout<<"3. Papas fritas: 2 Bs"<<endl;
+    cout<<"4. Soda 5 Bs"<<endl;
+    cout<<"0. Salir"<<endl;
+    
+    cout<<"Ingrese una opcion: ";
+    cin>>opcion;
+    
+    do {
+        switch (opcion) {
+        case 1:
+        cout<<"1. Hamburguesa simple: 3 Bs"<<endl;
+        cout<<"Ingrese la cantidad: "; cin>>cantidad;
+        break;
+        case 2:
+        cout<<"2. Hamburguesa con queso: 5 Bs"<<endl;
+        cout<<"Ingrese la cantidad: "; cin>>cantidad;
+        break;
+        case 3:
+        cout<<"3. Papas fritas: 2 Bs"<<endl;
+        cout<<"Ingrese la cantidad: "; cin>>cantidad;
+        break;
+        case 4:
+        cout<<"4. Soda 5 Bs"<<endl;
+        cout<<"Ingrese la cantidad: "; cin>>cantidad;
+        break;
+        default: 
+        cout<<"Salir del programa";
+        }
+    } while (opcion);
+  
+    return 0;
+}
