@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    int a, b, c, prom;
+
+    cout << "Ingrese a: "; cin >> a;
+    cout << "Ingrese b: "; cin >> b;
+    cout << "Ingrese c:"; cin >> c;
+
+    if (a >= 0 && a <= 10) {
+        prom = (a + b + c) / 3;
+
+        if (b>= 0 && b<=10) {
+            prom = (a + b + c) / 3;
+
+            if (c>= 0 && c<=10) {
+                prom = (a + b + c) / 3;
+                cout << "El promedio es: " << prom;
+
+            }
+            else {
+                cout << "El numero "<< c << "No es valido";
+            }
+        }
+        else {
+            cout << "El numero "<< b << "No es valido"; 
+        }
+    }
+    else {
+        cout << "El numero "<< a << "No es valido"; 
+    }
+
+    return 0;
+}
